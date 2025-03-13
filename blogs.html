@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Board</title>
+    <!-- font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- daisyUI CND -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+    <style>
+        .poppins {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-[#F4F7FF] py-7">
+    <header>
+        <nav class="container mx-auto bg-white flex justify-between py-3 px-6 mb-5 rounded-xl">
+            <div class="flex items-center gap-2">
+                <div class="">
+                    <img src="./assets/logo.png" alt="">
+                </div>
+                <h1 class="text-3xl">Dev<samp class="text-3xl font-bold">Board</samp></h1>
+            </div>
+            <div class="flex items-center gap-5 ">
+                <button id="backDesk"
+                    class="md:px-5 px-3 py-2 bg-[#3752FD] text-white font-semibold text-base cursor-pointer hover:bg-blue-800 rounded-lg mt-1">Back
+                    to Desk</button>
+
+            </div>
+        </nav>
+    </header>
+    <main class="container mx-auto poppins">
+        <section>
+            <div class="text-center">
+                <h2 class="text-4xl font-bold text-gray-700 pb-5">Blogs</h2>
+            </div>
+            <section>
+                <div class="flex flex-col bg-white rounded-xl py-5 px-3 gap-4 ">
+                    <h3 class="text-2xl font-bold">Question-1: What are the different ways to select an element in the
+                        DOM?
+                    </h3>
+                    <hr class="text-gray-400 border-dashed my-4 ">
+                    <p>জাভাস্ক্রিপ্ট ব্যবহার করে DOM-এ একটি উপাদান নির্বাচন করার কিছু উপায় আছে, সেগুলি হচ্ছে
+                        getElementById , getElementsByClassName , getElementsByTagName , querySelector এবং
+                        querySelectorAll এর মতো পদ্ধতি ব্যবহার করতে পারেন।</p>
+                </div>
+                <div class="flex flex-col bg-white rounded-xl py-5 px-3 my-4">
+                    <h3 class="text-2xl font-bold">Question-2: What is the difference between innerHTML, innerText, and
+                        textContent ?
+                    </h3>
+                    <hr class="flex flex-col text-gray-400 border-dashed my-4 ">
+                    <p>innerHTML, innerText এবং textContent এর মধ্যে পার্থক্য হল 'innerHTML' একটি এলিমেন্টের মধ্যে
+                        সম্পূর্ণ HTML কন্টেন্ট উদ্ধার করে, ট্যাগ সহ, যখন innerText শুধুমাত্র একটি এলিমেন্টের দৃশ্যমান
+                        টেক্সট কন্টেন্ট ফেরত দেয়, এবং textContent একটি এলিমেন্টের মধ্যে সমস্ত টেক্সট কন্টেন্ট উদ্ধার
+                        করে, যার মধ্যে আপনাকে HTML ব্যাখ্যা ছাড়াই কাঁচা টেক্সট দেয়।</p>
+                </div>
+                <div class="flex flex-col bg-white rounded-xl py-5 px-3">
+                    <h3 class="text-2xl font-bold">Question-3: What is event delegation in the DOM?
+                    </h3>
+                    <hr class="flex flex-col text-gray-400 border-dashed my-4">
+                    <p>ইভেন্ট ডেলিগেশান হল একটি জাভাস্ক্রিপ্ট কৌশল যা একটি একক ইভেন্ট লিসেনারকে একাধিক চাইল্ড এলিমেন্টের
+                        ইভেন্ট পরিচালনা করতে দেয়। এটি DOM-এ উচ্চ স্তরে ইভেন্ট পরিচালনা করার জন্য ইভেন্ট প্রচার ব্যবহার
+                        করে।</p>
+                </div>
+                <div class="flex flex-col bg-white rounded-xl py-5 px-3 my-4">
+                    <h3 class="text-2xl font-bold">Question-4: What is event bubbling in the DOM?
+                    </h3>
+                    <hr class="text-gray-400 border-dashed my-4">
+                    <p>ইভেন্ট বাবলিং হলো এমন একটি আচরণ যেখানে যখন কোনও এলিমেন্টের ইভেন্ট ঘটে, তখন এটি কেবল সেই
+                        এলিমেন্টের উপর একটি ইভেন্ট হ্যান্ডলারকে ট্রিগার করে না বরং DOM হায়ারার্কির মাধ্যমে উপরের দিকে
+                        প্রচার করে, এর প্যারেন্ট এলিমেন্টগুলিতে ইভেন্ট হ্যান্ডলারগুলিকে ট্রিগার করে যতক্ষণ না এটি
+                        ডকুমেন্টের মূলে পৌঁছায়।</p>
+                </div>
+                <div class="flex flex-col bg-white rounded-xl py-5 px-3 mb-8">
+                    <h3 class="text-2xl font-bold">Question-5: How do you create, add, and remove elements using
+                        JavaScript?
+                    </h3>
+                    <hr class="text-gray-400 border-dashed my-4 ">
+                    <p>আমি document.createElement() ব্যবহার করে JS-এ নতুন এলিমেন্ট তৈরি করতে পারি এবং তারপর
+                        appendChild() ব্যবহার করে DOM-এ এটি যোগ করতে পারি। একটি এলিমেন্ট অপসারণ করতে, তার প্যারেন্ট
+                        এলিমেন্টে removeChild() অথবা parentNode.removeChild() করতে পারি।</p>
+                </div>
+            </section>
+        </section>
+    </main>
+    <script src="./script/backDesk.js"></script>
+</body>
+
+</html>
