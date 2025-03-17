@@ -9,5 +9,5 @@ const date = today.toLocaleString("en-US", {
 window.onload = function () {
 
   document.getElementById("date").innerText = date;
-  document.getElementById("day").innerText = `${day} ,`;
+  document.getElementById("dey").innerText = `${day} ,`;
 };
